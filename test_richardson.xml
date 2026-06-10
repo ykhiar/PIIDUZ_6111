@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Práctica Extrapolación de Richardson</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 46814650  -->
+  <question type="multichoice">
+    <name>
+      <text>Comprobar que Richardson mejora el resultado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Para \(f(x)=\sin x, c=0, h=0.1\), ¿cuál de los siguientes valores es coherente con el error absoluto cometido por \(N_2(h)\),?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(1.7 \times 10 ^{-3}\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Este valor corresponde aproximadamente al error de \(N_1(h)\).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(2.1\times 10 ^{-7}\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto: la extrapolación reduce el error varios órdenes.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(2.0 \times 10 ^{-2}\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>El error es demasiado grande.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(1.0 \times 10 ^{-1}\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No es coherente con un método de orden 4.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 45208140  -->
+  <question type="multichoice">
+    <name>
+      <text>Concepto básico</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La fórmula</p>
+<p>\( N_1(h)=\frac{f(c+h)-f(c-h)}{2h} \)</p>
+<p>se utiliza para:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Aproximar \(f(c)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Esta fórmula no aproxima el valor de la función.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Aproximar \(f'(c)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto. Es una aproximación centrada de la primera derivada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Aproximar \(f''(c)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No es una aproximación de la segunda derivada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Calcular el error de truncamiento</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>El error se analiza posteriormente, no se calcula directamente.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 45208150  -->
+  <question type="multichoice">
+    <name>
+      <text>Idea clave de Richardson</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿Qué se consigue al combinar \(<span class="base"><span class="mord"><span class="mord mathnormal">N_</span><span class="vlist-r"><span class="mord mtight">1</span><span class="vlist-s">​</span></span></span><span class="mopen">(</span><span class="mord mathnormal">h</span><span class="mclose">)\)</span></span> y \(<span class="base"><span class="mord"><span class="mord mathnormal">N_</span><span class="vlist-r"><span class="mord mtight">1</span><span class="vlist-s">​</span></span></span><span class="mopen">(</span><span class="mord mathnormal">h/2</span><span class="mclose">)\)</span></span>  para construir \(<span class="base"><span class="mord"><span class="mord mathnormal">N</span><span class="vlist-r"><span class="mord mtight">_2</span><span class="vlist-s">​</span></span></span><span class="mopen">(</span><span class="mord mathnormal">h</span><span class="mclose">)\)?</span></span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Reducir el error de redondeo.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Richardson actúa sobre el error de truncamiento.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Eliminar el término dominante del error.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Exacto: se cancela el término de orden \(h^2\).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Evitar evaluar la función en \(c-h\).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>La fórmula sigue siendo centrada.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Reducir el coste computacional.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>El coste computacional aumenta.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46814655  -->
+  <question type="multichoice">
+    <name>
+      <text>Leer la tabla del ejercicio extra</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Según la tabla de errores del ejercicio extra, al aumentar \(j\) (aplicar más extrapolaciones):</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El error aumenta.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>El objetivo del método es precisamente reducir el error.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El error disminuye indefinidamente al aumentar \(j\).</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>La extrapolación mejora el orden.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El error disminuye hasta alcanzar el límite de precisión de la máquina.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto: se alcanza el límite impuesto por la aritmética en doble precisión.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El método deja de converger.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>El método no diverge.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46106760  -->
+  <question type="numerical">
+    <name>
+      <text>Comprobar que N_1 está bien programado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sea \(f(x)=e^x\cos x, c=0, h=0.2\). Usando la fórmula centrada \(N_1(h)\), calcula el error absoluto cometido al aproximar \(f'(0)\).</p>
+<p><em>(Utiliza 6 decimales)</em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>0.986613</text>
+      <feedback format="html">
+        <text><![CDATA[<p>Recuerda que el error se calcula como \(|N_1(h)-f'(c)|\).</p>]]></text>
+      </feedback>
+      <tolerance>1.0E-6</tolerance>
+    </answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+<!-- question: 45208165  -->
+  <question type="shortanswer">
+    <name>
+      <text>Orden de N_2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>¿De qué orden es la aproximación \(N_2(h)\)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>4</text>
+      <feedback format="html">
+        <text><![CDATA[<p>\(N_2(h)\) tiene error \(\matcal(O)(h^4)\), al haberse cancelado el término de orden 2.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 45208170  -->
+  <question type="truefalse">
+    <name>
+      <text>Orden del método</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La aproximación \(N_1(h)\) es de orden 2, es decir, su error es del tipo \(\mathcal{O} (h^2)\).</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto. El término dominante del error es proporcional a \(<span class="base"><span class="mord"><span class="mord mathnormal">h^2</span></span><span class="mord"><span class="mord mathnormal">f</span><span class="mord mtight">′′′</span></span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mclose">)\)</span></span>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

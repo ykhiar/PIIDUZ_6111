@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Prácticas splines</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[<p>Preguntas para las prácticas de Thomas, splines natural y grapado</p>]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 46767235  -->
+  <question type="multichoice">
+    <name>
+      <text>comparar natural vs grapado</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sea el conjunto de datos:</p>
+<p>\(x=(0,1,2),\quad y=(0,1,0).\)</p>
+<p>Se construye el spline cúbico natural y el grapado con \(m_0=m_2=0\). Se evalúan ambos en \(t=0.5\). </p>
+<p>¿Qué afirmación es correcta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ambos valores coinciden.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No es correcto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El spline grapado da un valor mayor</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No es correcto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El spline natural da un valor mayor.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No se puede comparar sin la expresión analítica</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No es correcto.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46196180  -->
+  <question type="multichoice">
+    <name>
+      <text>comprobación REAL del código del spline</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sea el conjunto de datos:</p>
+<p>\(x=(0,1,2),\quad y=(0,1,0).\)</p>
+<p>Se construye el spline cúbico natural asociado y se evalúa en \(t=0.5\). </p>
+<p>¿Cuál de los siguientes valores es coherente con una implementación correcta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0.125</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Demasiado pequeño para un spline cúbico suave.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0.5</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Coincidiría con interpolación lineal.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>0.6875</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto: el spline suaviza la interpolación.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No es correcto.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46196175  -->
+  <question type="multichoice">
+    <name>
+      <text>Detectar error típico de código</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p data-start="2730" data-end="2901">Al evaluar un spline cúbico natural, un estudiante obtiene valores incorrectos cerca de los extremos, pero el sistema para los \(z_<span class="mord"><span class="vlist-r"><span class="mord mathnormal mtight">i\)</span><span class="vlist-s">​</span></span></span> está bien resuelto.</p>
+<p data-start="2903" data-end="2934">¿Cuál es la causa más probable?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ha impuesto mal las condiciones de contorno.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>En el spline natural las condiciones son simples.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Ha cometido un error al localizar el intervalo \([x_<span class="mord mathnormal mtight">i,x_{i+1}]\).</span></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto: un error en la localización del subintervalo es muy común.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ha usado mal el algoritmo de Thomas.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>El sistema ya se ha resuelto correctamente.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Ha elegido pocos puntos para la gráfica.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No afecta al valor puntual del spline.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46749070  -->
+  <question type="multichoice">
+    <name>
+      <text>Efecto de las condiciones grapadas</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Usando los datos:</p>
+<p>\(x=(0,1,2),\quad y=(0,1,0)\),</p>
+<p>se construye un spline cúbico grapado con pendientes en los extremos <em>grandes</em> en valor absoluto.</p>
+<p>¿Qué efecto es esperable cerca de los extremos?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El spline se vuelve lineal.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>El spline presenta mayor curvatura cerca de los extremos.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Las pendientes impuestas fuerzan la forma del spline cerca de los extremos.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El spline coincide con el natural.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>El spline deja de interpolar los nodos.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46749080  -->
+  <question type="multichoice">
+    <name>
+      <text>eficiencia + código</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Al evaluar el spline en un punto \(t\), se implementa la localización del subintervalo \([x_i,x_{i+1}]\) con un bucle lineal.</p>
+<p>¿Cuál es el coste computacional de este proceso?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Respuesta correcta</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta parcialmente correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Respuesta incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\mathcal{O}(1)\)</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\mathcal{O}(\log n)\)</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(\mathcal{O}(n)\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto. Se recorren los nodos hasta encontrar el intervalo adecuado.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\mathcal{O}(n^2)\)</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 46749085  -->
+  <question type="numerical">
+    <name>
+      <text>Comprobar concepto</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sea el conjunto de datos:</p>
+<p>\(x=(0,1,2),\quad y=(0,1,0).\)</p>
+<p>Se construye el spline cúbico natural asociado. ¿Cuál es el valor de s(1)?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>1</text>
+      <feedback format="html">
+        <text><![CDATA[<p>El spline interpola exactamente los datos.</p>]]></text>
+      </feedback>
+      <tolerance>1.0E-6</tolerance>
+    </answer>
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+  </question>
+
+<!-- question: 46196165  -->
+  <question type="truefalse">
+    <name>
+      <text>Entender la construcción</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>En un spline cúbico natural con \(n+1\) nodos, los coeficientes \(z_1,\dots,z_{n-1}\) se obtienen resolviendo un sistema lineal tridiagonal</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correcto. El sistema tridiagonal se resuelve eficientemente con el algoritmo de Thomas.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
